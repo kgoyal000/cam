@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Image Capture</title>
+<!-- <link rel="stylesheet" href="../css/main.css"> -->
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <div id="container">
+
+    <div>
+      <button id="grabFrame">Grab Frame</button>
+      <button id="takePhoto">Take Photo</button>
+      <div class="select">
+        <label for="videoSource">Video source: </label><select id="videoSource"></select>
+      </div>
+      <input class="hidden" id="zoom" type="range" step="20">
+    </div>
+
+    <video autoplay playsinline class="hidden"></video>
+    <img>
+    <canvas class="hidden"></canvas>
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
